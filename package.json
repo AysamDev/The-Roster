@@ -1,0 +1,19 @@
+{
+  "name": "word-counter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "handlebar": "^1.0.0",
+    "jquery": "^3.5.1",
+    "request": "^2.88.2",
+    "validator": "^13.1.17"
+  }
+}

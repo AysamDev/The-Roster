@@ -1,0 +1,64 @@
+body{
+    font-family: 'PT Sans', sans-serif;
+    font-size: large;
+}
+
+#new-roster{
+    display: grid;
+    margin-bottom: 1vmax;
+    height: 2vmax;
+    grid-template-columns: 5fr 2fr;
+
+}
+#team_input{
+font-size: 150%;
+text-size-adjust: 30px;
+}
+button{
+    justify-self: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-right: 50%;
+    border: cornsilk transparent  solid 3px;
+    border-radius: 30px;
+    opacity: 0.8;
+    font-size: large;
+
+}
+
+.team-container{
+    display: grid;
+    grid-gap: 1vmax;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.player-info{
+    display: grid;
+    background-color: #1D428A;;
+    grid-template-columns: none;
+    border-radius: 15px;
+    padding: 1vmax;
+    margin-left: 1vmax;
+    border-color: #98002E;
+    box-shadow: 5px 5px 5px #98002E;
+}
+.name{
+    justify-self:center;
+}
+.jersey
+{
+    justify-self:center;
+    margin-bottom: 2px;
+}
+.pos{
+    justify-self: center;
+    align-content:center;
+    margin-top: 10px;
+}
+.image
+{
+    justify-self:center;
+    outline: 3px solid white;
+    opacity: 0.9;
+    border-radius: 2px;
+}
