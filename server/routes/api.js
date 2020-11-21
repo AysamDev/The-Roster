@@ -21,7 +21,6 @@ router.get("/team/:teamName",function(req,res)
 {
     const teamName = req.params.teamName || undefined
     const id = teamToIDs[teamName] || null
-    console.log(id)
     request(`http://data.nba.net/10s/prod/v1/2018/players.json`,function(err,respone,body)
     {
         const data = JSON.parse(body) || undefined
