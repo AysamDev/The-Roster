@@ -14,7 +14,7 @@
         <div class="player-info">
             <div class="name">{{firstName}} {{lastName}}</div>
             <div class="jersey">{{jersey}}</div>
-            <img class="image" src={{image}} alt="">
+            <img class="image" src={{image}} onerror= "this.src = `https://www.pngkey.com/png/detail/968-9682817_nba-logo.png`;this.className=`errorimage`">
             <div class="pos">{{pos}}</div>
         </div>
         {{/each}}

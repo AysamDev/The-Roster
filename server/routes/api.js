@@ -33,8 +33,8 @@ router.get("/team/:teamName",function(req,res)
                 if(player.teamId == id.toString() && player.isActive == true)
                 {
                     const a = {
-                        firstName: player.firstName,
-                        lastName: player.lastName,
+                        firstName: player.firstName.toUpperCase(),
+                        lastName: player.lastName.toUpperCase(  ),
                         jersey: player.jersey,
                         pos:    player.pos
                     }

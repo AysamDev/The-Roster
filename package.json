@@ -16,6 +16,7 @@
     "handlebar": "^1.0.0",
     "jquery": "^3.5.1",
     "request": "^2.88.2",
+    "urllib": "^2.36.1",
     "validator": "^13.1.17"
   }
 }

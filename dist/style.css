@@ -62,3 +62,12 @@ button{
     opacity: 0.9;
     border-radius: 2px;
 }
+.errorimage
+{
+    justify-self:center;
+    height: 12vmax;
+    width: 18 vmax;
+    outline: 3px solid black;
+    opacity: 0.9;
+    border-radius: 2px;
+}
