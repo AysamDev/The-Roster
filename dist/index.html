@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Roster</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+
+<body>
+
+    <script  id="team-template" type="text/x-handlebars-template">
+        {{#each data}}
+        <div class="player-info">
+            <div class="name">{{firstName}} {{lastName}}</div>
+            <div class="jersey">{{jersey}}</div>
+            <img class="image" src={{image}} onerror= "this.src = `https://www.pngkey.com/png/detail/968-9682817_nba-logo.png`;this.className=`errorimage`">
+            <div class="pos">{{pos}}</div>
+        </div>
+        {{/each}}
+    </script>
+
+    <div id="new-roster">
+        <input type="text" id="team-input" placeholder="Enter team name">
+        <button onclick=fetchRoster()>Get Roster</button>
+    </div>
+
+    <div id="container">
+        <div class="team-container">
+        </div>
+    </div>
+<script src="./jquery/dist/jquery.js"></script>
+<script src="./handlebars/dist/handlebars.js"></script>
+<script src="renderer.js"></script>
+<script src="APIManager.js"></script>
+<script src="main.js"></script>
+
+</body>
+
+</html>
